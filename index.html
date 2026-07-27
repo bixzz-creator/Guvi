@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Entry</title>
+    <script>
+        // Check if the user is already logged in by looking for the token
+        window.onload = function() {
+            if (localStorage.getItem('session_token')) {
+                window.location.href = 'profile.html';
+            } else {
+                window.location.href = 'register.html';
+            }
+        };
+    </script>
+</head>
+<body>
+    <p>Redirecting you...</p>
+</body>
+</html>
